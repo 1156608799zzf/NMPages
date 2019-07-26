@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+
+        .row {
+            background: red;
+            width: 400px;
+            height: 400px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .slide {
+            width: 100%;
+            background: yellow;
+            text-align: center;
+            position: absolute;
+            bottom: 0;
+            transform: translateY(100%);
+            transition: all 1s;
+        }
+
+        .row:hover .slide {
+            transform: translateY(0%);
+        }
+    </style>
+</head>
+<body>
+<div class="row">
+    <div class="slide">
+        <p>我是上移块中的内容！</p>
+        <p>我是上移块中的内容！</p>
+        <p>我是上移块中的内容！</p>
+    </div>
+</div>
+</body>
+</html>
